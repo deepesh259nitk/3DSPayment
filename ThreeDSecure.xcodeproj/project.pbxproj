@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1E39A8C237468D2000719E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E39A8B237468D2000719E8 /* AppDelegate.swift */; };
+		B1E39A8E237468D2000719E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E39A8D237468D2000719E8 /* SceneDelegate.swift */; };
+		B1E39A90237468D2000719E8 /* CardPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E39A8F237468D2000719E8 /* CardPaymentViewController.swift */; };
+		B1E39A93237468D2000719E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E39A91237468D2000719E8 /* Main.storyboard */; };
+		B1E39A95237468D3000719E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E39A94237468D3000719E8 /* Assets.xcassets */; };
+		B1E39A98237468D3000719E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E39A96237468D3000719E8 /* LaunchScreen.storyboard */; };
+		B1E39AAE23747057000719E8 /* CardPaymentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E39AAD23747057000719E8 /* CardPaymentInteractor.swift */; };
+		B1E39AB0237471C1000719E8 /* PaymentServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E39AAF237471C1000719E8 /* PaymentServiceManager.swift */; };
+		B1E39AB223747488000719E8 /* CardPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E39AB123747488000719E8 /* CardPayment.swift */; };
+		B1E39AB62376B8BF000719E8 /* CardDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E39AB52376B8BF000719E8 /* CardDetails.swift */; };
+		B1E39AB92376C1DE000719E8 /* ThreeDSecureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E39AB72376C1DE000719E8 /* ThreeDSecureViewController.swift */; };
+		B1E39ABA2376C1DE000719E8 /* ThreeDSecureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1E39AB82376C1DE000719E8 /* ThreeDSecureViewController.xib */; };
+		B1E39ABF2376FEFE000719E8 /* PaymentResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E39ABD2376FEFE000719E8 /* PaymentResultViewController.swift */; };
+		B1E39AC02376FEFE000719E8 /* PaymentResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1E39ABE2376FEFE000719E8 /* PaymentResultViewController.xib */; };
+		B1E774CD2378758D00ED7503 /* CardPaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E774CC2378758D00ED7503 /* CardPaymentViewModel.swift */; };
+		B1E774D423787CE000ED7503 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E774D323787CE000ED7503 /* CardType.swift */; };
+		B1E774D923787EFA00ED7503 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E774D823787EFA00ED7503 /* StringExtension.swift */; };
+		B1E774DF23789F9300ED7503 /* CardPaymentViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E774DE23789F9300ED7503 /* CardPaymentViewModelTests.swift */; };
+		B1E774E123797A3200ED7503 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E774E023797A3200ED7503 /* StringExtensionTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1E39A9F237468D3000719E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1E39A80237468D2000719E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1E39A87237468D2000719E8;
+			remoteInfo = ThreeDSecure;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1E39A88237468D2000719E8 /* ThreeDSecure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeDSecure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E39A8B237468D2000719E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1E39A8D237468D2000719E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B1E39A8F237468D2000719E8 /* CardPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPaymentViewController.swift; sourceTree = "<group>"; };
+		B1E39A92237468D2000719E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1E39A94237468D3000719E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1E39A97237468D3000719E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1E39A99237468D3000719E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1E39A9E237468D3000719E8 /* ThreeDSecureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreeDSecureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E39AA4237468D3000719E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1E39AAD23747057000719E8 /* CardPaymentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPaymentInteractor.swift; sourceTree = "<group>"; };
+		B1E39AAF237471C1000719E8 /* PaymentServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentServiceManager.swift; sourceTree = "<group>"; };
+		B1E39AB123747488000719E8 /* CardPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPayment.swift; sourceTree = "<group>"; };
+		B1E39AB52376B8BF000719E8 /* CardDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetails.swift; sourceTree = "<group>"; };
+		B1E39AB72376C1DE000719E8 /* ThreeDSecureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDSecureViewController.swift; sourceTree = "<group>"; };
+		B1E39AB82376C1DE000719E8 /* ThreeDSecureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreeDSecureViewController.xib; sourceTree = "<group>"; };
+		B1E39ABD2376FEFE000719E8 /* PaymentResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResultViewController.swift; sourceTree = "<group>"; };
+		B1E39ABE2376FEFE000719E8 /* PaymentResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentResultViewController.xib; sourceTree = "<group>"; };
+		B1E774CC2378758D00ED7503 /* CardPaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPaymentViewModel.swift; sourceTree = "<group>"; };
+		B1E774D323787CE000ED7503 /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardType.swift; path = ThreeDSecure/Model/CardType.swift; sourceTree = SOURCE_ROOT; };
+		B1E774D823787EFA00ED7503 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		B1E774DE23789F9300ED7503 /* CardPaymentViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardPaymentViewModelTests.swift; path = ThreeDSecureTests/CardPaymentViewModelTests.swift; sourceTree = SOURCE_ROOT; };
+		B1E774E023797A3200ED7503 /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1E39A85237468D2000719E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E39A9B237468D3000719E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1E39A7F237468D2000719E8 = {
+			isa = PBXGroup;
+			children = (
+				B1E39A8A237468D2000719E8 /* ThreeDSecure */,
+				B1E39AA1237468D3000719E8 /* ThreeDSecureTests */,
+				B1E39A89237468D2000719E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1E39A89237468D2000719E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1E39A88237468D2000719E8 /* ThreeDSecure.app */,
+				B1E39A9E237468D3000719E8 /* ThreeDSecureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1E39A8A237468D2000719E8 /* ThreeDSecure */ = {
+			isa = PBXGroup;
+			children = (
+				B1E774D523787D8900ED7503 /* Extensions */,
+				B1E774CB2378757900ED7503 /* ViewModel */,
+				B1E39AC423770479000719E8 /* Manager */,
+				B1E39AC32377046C000719E8 /* Interactor */,
+				B1E39AC22377045B000719E8 /* Model */,
+				B1E39AC12377042A000719E8 /* ViewControllers */,
+				B1E39A8B237468D2000719E8 /* AppDelegate.swift */,
+				B1E39A8D237468D2000719E8 /* SceneDelegate.swift */,
+				B1E39A94237468D3000719E8 /* Assets.xcassets */,
+				B1E39A96237468D3000719E8 /* LaunchScreen.storyboard */,
+				B1E39A99237468D3000719E8 /* Info.plist */,
+			);
+			path = ThreeDSecure;
+			sourceTree = "<group>";
+		};
+		B1E39AA1237468D3000719E8 /* ThreeDSecureTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1E774DE23789F9300ED7503 /* CardPaymentViewModelTests.swift */,
+				B1E774E023797A3200ED7503 /* StringExtensionTests.swift */,
+				B1E39AA4237468D3000719E8 /* Info.plist */,
+			);
+			path = ThreeDSecureTests;
+			sourceTree = "<group>";
+		};
+		B1E39AC12377042A000719E8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1E39A8F237468D2000719E8 /* CardPaymentViewController.swift */,
+				B1E39ABD2376FEFE000719E8 /* PaymentResultViewController.swift */,
+				B1E39AB72376C1DE000719E8 /* ThreeDSecureViewController.swift */,
+				B1E39ABE2376FEFE000719E8 /* PaymentResultViewController.xib */,
+				B1E39AB82376C1DE000719E8 /* ThreeDSecureViewController.xib */,
+				B1E39A91237468D2000719E8 /* Main.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B1E39AC22377045B000719E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1E774D323787CE000ED7503 /* CardType.swift */,
+				B1E39AB123747488000719E8 /* CardPayment.swift */,
+				B1E39AB52376B8BF000719E8 /* CardDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1E39AC32377046C000719E8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B1E39AAD23747057000719E8 /* CardPaymentInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B1E39AC423770479000719E8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B1E39AAF237471C1000719E8 /* PaymentServiceManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B1E774CB2378757900ED7503 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B1E774CC2378758D00ED7503 /* CardPaymentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B1E774D523787D8900ED7503 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B1E774D823787EFA00ED7503 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1E39A87237468D2000719E8 /* ThreeDSecure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1E39AA7237468D3000719E8 /* Build configuration list for PBXNativeTarget "ThreeDSecure" */;
+			buildPhases = (
+				B1E39A84237468D2000719E8 /* Sources */,
+				B1E39A85237468D2000719E8 /* Frameworks */,
+				B1E39A86237468D2000719E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThreeDSecure;
+			productName = ThreeDSecure;
+			productReference = B1E39A88237468D2000719E8 /* ThreeDSecure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1E39A9D237468D3000719E8 /* ThreeDSecureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1E39AAA237468D3000719E8 /* Build configuration list for PBXNativeTarget "ThreeDSecureTests" */;
+			buildPhases = (
+				B1E39A9A237468D3000719E8 /* Sources */,
+				B1E39A9B237468D3000719E8 /* Frameworks */,
+				B1E39A9C237468D3000719E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1E39AA0237468D3000719E8 /* PBXTargetDependency */,
+			);
+			name = ThreeDSecureTests;
+			productName = ThreeDSecureTests;
+			productReference = B1E39A9E237468D3000719E8 /* ThreeDSecureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1E39A80237468D2000719E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Freelancer;
+				TargetAttributes = {
+					B1E39A87237468D2000719E8 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					B1E39A9D237468D3000719E8 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = B1E39A87237468D2000719E8;
+					};
+				};
+			};
+			buildConfigurationList = B1E39A83237468D2000719E8 /* Build configuration list for PBXProject "ThreeDSecure" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1E39A7F237468D2000719E8;
+			productRefGroup = B1E39A89237468D2000719E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1E39A87237468D2000719E8 /* ThreeDSecure */,
+				B1E39A9D237468D3000719E8 /* ThreeDSecureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1E39A86237468D2000719E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E39A98237468D3000719E8 /* LaunchScreen.storyboard in Resources */,
+				B1E39ABA2376C1DE000719E8 /* ThreeDSecureViewController.xib in Resources */,
+				B1E39A95237468D3000719E8 /* Assets.xcassets in Resources */,
+				B1E39A93237468D2000719E8 /* Main.storyboard in Resources */,
+				B1E39AC02376FEFE000719E8 /* PaymentResultViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E39A9C237468D3000719E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1E39A84237468D2000719E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E39AB0237471C1000719E8 /* PaymentServiceManager.swift in Sources */,
+				B1E39A90237468D2000719E8 /* CardPaymentViewController.swift in Sources */,
+				B1E39AB92376C1DE000719E8 /* ThreeDSecureViewController.swift in Sources */,
+				B1E39AB223747488000719E8 /* CardPayment.swift in Sources */,
+				B1E39ABF2376FEFE000719E8 /* PaymentResultViewController.swift in Sources */,
+				B1E774CD2378758D00ED7503 /* CardPaymentViewModel.swift in Sources */,
+				B1E39AAE23747057000719E8 /* CardPaymentInteractor.swift in Sources */,
+				B1E39A8C237468D2000719E8 /* AppDelegate.swift in Sources */,
+				B1E39AB62376B8BF000719E8 /* CardDetails.swift in Sources */,
+				B1E39A8E237468D2000719E8 /* SceneDelegate.swift in Sources */,
+				B1E774D923787EFA00ED7503 /* StringExtension.swift in Sources */,
+				B1E774D423787CE000ED7503 /* CardType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E39A9A237468D3000719E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E774DF23789F9300ED7503 /* CardPaymentViewModelTests.swift in Sources */,
+				B1E774E123797A3200ED7503 /* StringExtensionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1E39AA0237468D3000719E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1E39A87237468D2000719E8 /* ThreeDSecure */;
+			targetProxy = B1E39A9F237468D3000719E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1E39A91237468D2000719E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1E39A92237468D2000719E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1E39A96237468D3000719E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1E39A97237468D3000719E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1E39AA5237468D3000719E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1E39AA6237468D3000719E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1E39AA8237468D3000719E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UW9MS57SR;
+				INFOPLIST_FILE = ThreeDSecure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.djrecker.ThreeDSecure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1E39AA9237468D3000719E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UW9MS57SR;
+				INFOPLIST_FILE = ThreeDSecure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.djrecker.ThreeDSecure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1E39AAB237468D3000719E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UW9MS57SR;
+				INFOPLIST_FILE = ThreeDSecureTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.djrecker.ThreeDSecureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeDSecure.app/ThreeDSecure";
+			};
+			name = Debug;
+		};
+		B1E39AAC237468D3000719E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UW9MS57SR;
+				INFOPLIST_FILE = ThreeDSecureTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.djrecker.ThreeDSecureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeDSecure.app/ThreeDSecure";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1E39A83237468D2000719E8 /* Build configuration list for PBXProject "ThreeDSecure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E39AA5237468D3000719E8 /* Debug */,
+				B1E39AA6237468D3000719E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1E39AA7237468D3000719E8 /* Build configuration list for PBXNativeTarget "ThreeDSecure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E39AA8237468D3000719E8 /* Debug */,
+				B1E39AA9237468D3000719E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1E39AAA237468D3000719E8 /* Build configuration list for PBXNativeTarget "ThreeDSecureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E39AAB237468D3000719E8 /* Debug */,
+				B1E39AAC237468D3000719E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1E39A80237468D2000719E8 /* Project object */;
+}
